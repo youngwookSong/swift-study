@@ -60,10 +60,11 @@ myphone = nil
 if let phone = myphone
 {
     print("my phone is \(phone)")
+    print("my phone is \(phone)")
 }
 else
 {
-    print("myphone == nil")
+    print("myphone == nili")
 }
 
 var num:Int? = 2
