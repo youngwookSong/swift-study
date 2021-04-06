@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="PJj-wi-OOz">
-                                    <rect key="frame" x="0.0" y="117" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="160" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" title="add Date"/>
                                     <connections>
@@ -44,6 +44,40 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" id="nKc-S9-WHt" customClass="customTableViewCell" customModule="simpleTable" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="99" width="414" height="43"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nKc-S9-WHt" id="Mte-w2-MZp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZW-MZ-bh8">
+                                                    <rect key="frame" x="20" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9i-bD-4Nf">
+                                                    <rect key="frame" x="352" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZZW-MZ-bh8" firstAttribute="top" secondItem="Mte-w2-MZp" secondAttribute="topMargin" id="24s-QE-1TC"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ZZW-MZ-bh8" secondAttribute="bottom" id="4LY-kf-Pmz"/>
+                                                <constraint firstItem="b9i-bD-4Nf" firstAttribute="top" secondItem="Mte-w2-MZp" secondAttribute="topMargin" id="WWn-kM-l0d"/>
+                                                <constraint firstItem="ZZW-MZ-bh8" firstAttribute="leading" secondItem="Mte-w2-MZp" secondAttribute="leadingMargin" id="d2S-Da-c6S"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="b9i-bD-4Nf" secondAttribute="bottom" id="hZi-cb-Ucy"/>
+                                                <constraint firstItem="b9i-bD-4Nf" firstAttribute="trailing" secondItem="Mte-w2-MZp" secondAttribute="trailingMargin" id="pjb-YI-eAa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="leftLabel" destination="ZZW-MZ-bh8" id="e9V-ft-gM5"/>
+                                            <outlet property="rightLabel" destination="b9i-bD-4Nf" id="aK8-rj-Ejg"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

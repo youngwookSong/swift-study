@@ -19,6 +19,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let dateFormatter:DateFormatter = {
         let formatter:DateFormatter = DateFormatter()
         formatter.dateStyle = .medium
+        return formatter
+    }()
+    
+    let timeFormatter:DateFormatter = {
+        let formatter:DateFormatter = DateFormatter()
         formatter.timeStyle = .medium
         return formatter
     }()
@@ -47,20 +52,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = tableview.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
         
         if indexPath.section < 2{
+            let cell:UITableViewCell = tableview.dequeueReusableCell(withIdentifier: "cell", for: indexPath) //0,1번 섹션은 위에꺼 가져오는거
+            
             //한줄로 쓰는 if문
             let text:String = indexPath.section == 0 ? korean[indexPath.row] : english[indexPath.row]
             cell.textLabel?.text = text
+            
+            return cell
         }
         else{
-            cell.textLabel?.text = self.dateFormatter.string(from: self.dates[indexPath.row])
+            //마지막 섹션은 따로 만든 (커스텀마이징한) 셀을 쓴다.
+            let cell:customTableViewCell = tableview.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! customTableViewCell //타입 캐스팅
+            
+            cell.leftLabel.text = self.dateFormatter.string(from: self.dates[indexPath.row])
+            cell.rightLabel.text = self.timeFormatter.string(from: self.dates[indexPath.row])
+            
+            return cell
         }
-        
-        
-        
-        return cell
     }
     //-----------------------------------------------------------------------------------
     
@@ -74,7 +85,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return section == 0 ? "한글" : "영어"
         }
         else{
-            return nil
+            return "시간"
+        }
+    }
+    
+    //cell에 높이 지정
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section < 2
+        {
+            return 50
+        }
+        else{
+            return 100
         }
     }
     
