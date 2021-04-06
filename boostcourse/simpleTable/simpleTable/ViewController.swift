@@ -14,7 +14,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     let korean:[String] = ["가", "나", "다", "라", "마"]
     let english:[String] = ["a", "b", "c", "d", "e",]
+    var dates:[Date] = []
     
+    let dateFormatter:DateFormatter = {
+        let formatter:DateFormatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .medium
+        return formatter
+    }()
+    
+    @IBAction func dateButton(_ sender: UIButton) {
+        dates.append(Date()) //동적 데이터 추가
+        
+        //테이블 뷰 리로딩
+        //self.tableview.reloadData() -> 이건 전체의 테이블을 다시 리로드(비효율적!)
+        self.tableview.reloadSections(IndexSet(2...2), with: UITableView.RowAnimation.automatic)
+        //인덱스2의 섹션만 리로드! 애니메이션 있게
+    }
     //요 밑에는 필수적인 DataSource protocol ------------------------------------------------
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //스위치문으로 각 섹션에 해당하는 행의 개수 다르게 반환해줌
@@ -23,6 +39,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return korean.count
         case 1:
             return english.count
+        case 2:
+            return dates.count
         default:
             return 0
         }
@@ -31,22 +49,33 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:UITableViewCell = tableview.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        //한줄로 쓰는 if문
-        let text:String = indexPath.section == 0 ? korean[indexPath.row] : english[indexPath.row]
+        if indexPath.section < 2{
+            //한줄로 쓰는 if문
+            let text:String = indexPath.section == 0 ? korean[indexPath.row] : english[indexPath.row]
+            cell.textLabel?.text = text
+        }
+        else{
+            cell.textLabel?.text = self.dateFormatter.string(from: self.dates[indexPath.row])
+        }
         
-        cell.textLabel?.text = text
+        
         
         return cell
     }
     //-----------------------------------------------------------------------------------
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return section == 0 ? "한글" : "영어"
+        if section < 2{
+            return section == 0 ? "한글" : "영어"
+        }
+        else{
+            return nil
+        }
     }
     
     override func viewDidLoad() {
