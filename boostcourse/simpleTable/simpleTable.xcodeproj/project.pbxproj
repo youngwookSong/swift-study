@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B94498C4261D433C001B7893 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94498C3261D433C001B7893 /* secondViewController.swift */; };
 		B956172326170426006786C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B956172226170426006786C5 /* AppDelegate.swift */; };
 		B956172526170426006786C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B956172426170426006786C5 /* SceneDelegate.swift */; };
 		B956172726170426006786C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B956172626170426006786C5 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B94498C3261D433C001B7893 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		B956171F26170426006786C5 /* simpleTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B956172226170426006786C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B956172426170426006786C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				B956172426170426006786C5 /* SceneDelegate.swift */,
 				B956172626170426006786C5 /* ViewController.swift */,
 				B956172826170426006786C5 /* Main.storyboard */,
+				B94498C3261D433C001B7893 /* secondViewController.swift */,
 				B956172B26170428006786C5 /* Assets.xcassets */,
 				B956172D26170428006786C5 /* LaunchScreen.storyboard */,
 				B956173026170428006786C5 /* Info.plist */,
@@ -143,6 +146,7 @@
 				B956172726170426006786C5 /* ViewController.swift in Sources */,
 				B956172326170426006786C5 /* AppDelegate.swift in Sources */,
 				B9EC8A81261C9017003CD919 /* customTableViewCell.swift in Sources */,
+				B94498C4261D433C001B7893 /* secondViewController.swift in Sources */,
 				B956172526170426006786C5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -108,6 +108,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableview.delegate = self
         self.tableview.dataSource = self
     }
+    
+    //데이터 전달
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let nextView:secondViewController = segue.destination as? secondViewController  else{
+            return
+        }
+        
+        guard let cell:UITableViewCell = sender as? UITableViewCell else {
+            return
+        }
+        
+        nextView.text = cell.textLabel?.text
+    }
 
 
 }
