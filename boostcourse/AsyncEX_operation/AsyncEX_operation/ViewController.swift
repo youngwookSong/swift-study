@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         self.imageView.image = image*/
         
         //addOperation으로 백그라운드 실행하기
-        //하나의 스레드를 만드는 느낌 (버튼 눌러도 다른 동작할 수 있음!)
+        //하나의 스레드를 추가로 만드는 느낌 (버튼 눌러도 다른 동작할 수 있음!)
         OperationQueue().addOperation {
             let imageData:Data = try! Data.init(contentsOf: imageURL)
             let image:UIImage = UIImage(data: imageData)!
