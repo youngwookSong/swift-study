@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tableview: UITableView!
     
+    //이미지 저장소
     var fetchResult: PHFetchResult<PHAsset>!
     let imageManager: PHCachingImageManager = PHCachingImageManager()
     
@@ -130,7 +131,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         return cell
     }
-
+    
+    //데이터 전달
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let nextview:imageZoomViewController = segue.destination as? imageZoomViewController else {
+            return
+        }
+        
+        guard let cell:UITableViewCell = sender as? UITableViewCell else {
+            return
+        }
+        
+        guard let index:IndexPath = self.tableview.indexPath(for: cell
+        ) else {
+            return
+        }
+        
+        nextview.asset = self.fetchResult[index.row]
+    }
 
 }
 
