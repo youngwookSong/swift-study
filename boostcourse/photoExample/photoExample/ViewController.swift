@@ -8,13 +8,43 @@
 import UIKit
 import Photos
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, PHPhotoLibraryChangeObserver {
+    
     @IBOutlet weak var tableview: UITableView!
     
     var fetchResult: PHFetchResult<PHAsset>!
     let imageManager: PHCachingImageManager = PHCachingImageManager()
     
+    //편집할수 있게 할것이냐 (delegate)
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    //편집을 한다면 (delegate)
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete
+        {
+            let asset:PHAsset = self.fetchResult[indexPath.row]
+            
+            //삭제를 할것이다 (스와이프 해서 삭제)
+            PHPhotoLibrary.shared().performChanges({
+                PHAssetChangeRequest.deleteAssets([asset] as NSArray)
+            }, completionHandler: nil)
+        }
+    }
+    
+    //사진이 바뀐다면 (PHPhotoLibraryChangeObserver) 여기선 삭제된다면!
+    func photoLibraryDidChange(_ changeInstance: PHChange) {
+        guard let changes = changeInstance.changeDetails(for: fetchResult) else { return }
+        
+        fetchResult = changes.fetchResultAfterChanges
+        
+        OperationQueue.main.addOperation {
+            self.tableview.reloadSections(IndexSet(0...0), with: .automatic)
+        }
+    }
+    
+    //자체 메소드
     func requestCollection() {
         let cameraRoll: PHFetchResult<PHAssetCollection> = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .smartAlbumUserLibrary, options: nil)
         
@@ -73,6 +103,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         default:
             return
         }
+        
+        PHPhotoLibrary.shared().register(self)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -92,6 +124,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                   resultHandler: { image, _ in cell.imageView?.image = image
                                     print("hihi")
         })
+        
+        let options: PHImageRequestOptions = PHImageRequestOptions()
+        options.resizeMode = .exact
+        
         return cell
     }
 
