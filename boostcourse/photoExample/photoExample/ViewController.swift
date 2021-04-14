@@ -16,6 +16,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var fetchResult: PHFetchResult<PHAsset>!
     let imageManager: PHCachingImageManager = PHCachingImageManager()
     
+    @IBAction func refreshBarButton(_ sender: UIBarButtonItem) {
+        self.tableview.reloadSections(IndexSet(0...0), with: .automatic) 
+    }
+    
     //편집할수 있게 할것이냐 (delegate)
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true

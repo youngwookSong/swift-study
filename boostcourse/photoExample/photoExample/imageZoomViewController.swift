@@ -8,6 +8,8 @@
 import UIKit
 import Photos
 
+//option누르고 확대 축소하기
+
 class imageZoomViewController: UIViewController, UIScrollViewDelegate {
     
     var asset:PHAsset!
