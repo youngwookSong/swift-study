@@ -38,7 +38,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             //데이터 받아오기
             guard let data = data else {return}
             
-            //데이터 JSON으로 호출
+            //데이터 JSON으로 호출 friends배열 안에다가 넣어줌
             do {
                 let apiResponse: APIResponse = try JSONDecoder().decode(APIResponse.self, from: data)
                 self.friends = apiResponse.results
@@ -50,6 +50,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
         //dataTask를 호출하고 서버에 요청한다.
         dataTask.resume()
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -63,6 +64,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         cell.textLabel?.text = friend.name.full
         cell.detailTextLabel?.text = friend.email
+        
+        
+        //이 부분은 다음 시간에 수정
+        guard let imageURL: URL = URL(string: friend.picture.thumbnail) else {
+            return cell
+        }
+        guard let imageData: Data = try? Data(contentsOf: imageURL) else {
+            return cell
+        }
+        cell.imageView?.image = UIImage(data: imageData)
         
         return cell
     }
