@@ -42,7 +42,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             do {
                 let apiResponse: APIResponse = try JSONDecoder().decode(APIResponse.self, from: data)
                 self.friends = apiResponse.results
-                self.tableView.reloadData()
+                
+                //백그라운드로 실행되고 있었음
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+
             } catch(let err) {
                 print(err.localizedDescription)
             }
@@ -64,16 +69,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         cell.textLabel?.text = friend.name.full
         cell.detailTextLabel?.text = friend.email
+        cell.imageView?.image = nil
+        
+        //이미지를 다운받는 도중에도 다른 작업 할 수 있도록 (비동기화)
+        DispatchQueue.global().async {
+            guard let imageURL: URL = URL(string: friend.picture.thumbnail) else { return }
+            guard let imageData: Data = try? Data(contentsOf: imageURL) else { return }
+            
+            DispatchQueue.main.async {
+                
+                //재사용하기 위해
+                if let index: IndexPath = tableView.indexPath(for: cell)
+                {
+                    if index.row == indexPath.row
+                    {
+                        cell.imageView?.image = UIImage(data: imageData)
+                    }
+                }
+                
+            }
+        }
         
         
-        //이 부분은 다음 시간에 수정
-        guard let imageURL: URL = URL(string: friend.picture.thumbnail) else {
-            return cell
-        }
-        guard let imageData: Data = try? Data(contentsOf: imageURL) else {
-            return cell
-        }
-        cell.imageView?.image = UIImage(data: imageData)
         
         return cell
     }
