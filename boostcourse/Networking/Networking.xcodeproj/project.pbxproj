@@ -14,6 +14,7 @@
 		B915763D26305C1200644F74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B915763C26305C1200644F74 /* Assets.xcassets */; };
 		B915764026305C1200644F74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B915763E26305C1200644F74 /* LaunchScreen.storyboard */; };
 		B915764926305DD200644F74 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915764826305DD200644F74 /* model.swift */; };
+		B9B30EB826310D3500FEE7B6 /* request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B30EB726310D3500FEE7B6 /* request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B915763F26305C1200644F74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B915764126305C1200644F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B915764826305DD200644F74 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		B9B30EB726310D3500FEE7B6 /* request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				B915763326305C1000644F74 /* AppDelegate.swift */,
 				B915763526305C1000644F74 /* SceneDelegate.swift */,
 				B915763726305C1000644F74 /* ViewController.swift */,
+				B9B30EB726310D3500FEE7B6 /* request.swift */,
 				B915764826305DD200644F74 /* model.swift */,
 				B915763926305C1000644F74 /* Main.storyboard */,
 				B915763C26305C1200644F74 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 				B915763826305C1000644F74 /* ViewController.swift in Sources */,
 				B915763426305C1000644F74 /* AppDelegate.swift in Sources */,
 				B915763626305C1000644F74 /* SceneDelegate.swift in Sources */,
+				B9B30EB826310D3500FEE7B6 /* request.swift in Sources */,
 				B915764926305DD200644F74 /* model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,42 +19,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        //request파일에서 불러오기
+        NotificationCenter.default.addObserver(self, selector: #selector(self.didRecieveFriendsNotification(_:)), name: DidRecievedNotification, object: nil)
+    }
+    
+    @objc func didRecieveFriendsNotification(_ noti: Notification)
+    {
+        guard let friends: [Friend] = noti.userInfo?["friends"] as? [Friend] else { return }
+        
+        self.friends = friends
+        
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        guard let url: URL = URL(string: "https://randomuser.me/api/?results=20&inc=name,email,picture") else
-        {return}
-        
-        let session: URLSession = URLSession(configuration: .default)
-        let dataTask: URLSessionDataTask = session.dataTask(with: url) { (data:Data?, responds: URLResponse?, error: Error?) in
-            
-            if let error = error{
-                print(error.localizedDescription)
-                return
-            }
-            
-            //데이터 받아오기
-            guard let data = data else {return}
-            
-            //데이터 JSON으로 호출 friends배열 안에다가 넣어줌
-            do {
-                let apiResponse: APIResponse = try JSONDecoder().decode(APIResponse.self, from: data)
-                self.friends = apiResponse.results
-                
-                //백그라운드로 실행되고 있었음
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-
-            } catch(let err) {
-                print(err.localizedDescription)
-            }
-        }
-    
-        //dataTask를 호출하고 서버에 요청한다.
-        dataTask.resume()
+        requestFriends()
         
     }
     
