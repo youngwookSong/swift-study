@@ -9,7 +9,9 @@ import Foundation
 
 //notification으로 정보가져와서 다른 파일에다가 쓸 수 있게 하기 -> 코드 분산
 //viewcontroller안에 다쓰면 복잡하니까
+//값 전달하는 느낌. 무엇을 실행하는 느낌
 
+//처리할 애의 이름 설정
 let DidRecievedNotification : Notification.Name = Notification.Name("DidRecievedNotification")
 
 func requestFriends()
@@ -33,7 +35,7 @@ func requestFriends()
         do {
             let apiResponse: APIResponse = try JSONDecoder().decode(APIResponse.self, from: data)
             
-            //이케 전달해서 액션을 취하겠다.
+            //이케 전달해서 액션을 취하겠다. 처리해달라는 신호
             NotificationCenter.default.post(name:DidRecievedNotification, object:nil, userInfo:["friends":apiResponse.results])
             
             /*self.friends = apiResponse.results

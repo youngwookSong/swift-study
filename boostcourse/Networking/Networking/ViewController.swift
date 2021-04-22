@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         
-        //request파일에서 불러오기
+        //함수에 대한 일을 누구누구가 처리하라!
         NotificationCenter.default.addObserver(self, selector: #selector(self.didRecieveFriendsNotification(_:)), name: DidRecievedNotification, object: nil)
     }
     
