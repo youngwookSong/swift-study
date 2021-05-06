@@ -83,15 +83,18 @@ let historyBackup = speedHistory //배열 복사
 historyBackup
 
 //-------------------------------------------dictionary-------------------------------------------
-var namedic:[String:Int] = ["song":4, "kin":8, "dgdg":8, "sdgsdg":4]
+var namedic:[String:Int] = ["song":4, "kim":8, "kang":15, "park":8, "choi":4]
 
 namedic["dong"]=10 //딕셔너리 추가
-namedic["song"]
 
-namedic.keys //딕셔너리의 키값들
-namedic.values //딕셔너리의 값들
+print(namedic.keys) //딕셔너리의 키값들
+print(namedic.values) //딕셔너리의 값들
+
+print(namedic["song"])
+print(namedic["kang"])
 
 let namestr = [String](namedic.keys) //딕셔너리의 키를 배열로 가져옴
+print(namestr)
 
 //-------------------------------------------set-------------------------------------------
 let subway:Set = ["시청", "을지로", "방배", "용산", "이촌", "성수"]
