@@ -69,12 +69,46 @@ print(subway2)*/
 
 print(add(a: 4, b: 5))*/
 
-func string_ex (name:String, age:Int, height:Double) -> String {
+/*func string_ex (name:String, age:Int, height:Double) -> String {
     return "my name is \(name), age is \(age), height is \(height)"
 }
 
 let sentence = string_ex(name: "Song", age: 24, height: 182)
-print(sentence)
+print(sentence)*/
+
+/*var a : String? = "abc"
+var b : String
+
+b = a!
+
+print(b)*/
+
+
+
+/*var c : Int?
+
+c = 5
+c = nil
+
+print(c!)*/
+
+class Name {
+    var name = "Song"
+    
+    func my_name() {
+        print("my name is \(name)")
+    }
+}
+
+let song : Name = Name()
+
+print(song.name)
+song.my_name()
+
+song.name = "kim"
+song.my_name()
+
+
 
 
 
