@@ -100,13 +100,21 @@ class Name {
     }
 }
 
-let song : Name = Name()
+class YourName : Name {
+    var yourName = "Kim"
+    
+    func ourName() {
+        print("my name is \(name) and your name is \(yourName)")
+    }
+}
+
+let song : YourName = YourName()
 
 print(song.name)
-song.my_name()
+print(song.yourName)
 
-song.name = "kim"
 song.my_name()
+song.ourName()
 
 
 
