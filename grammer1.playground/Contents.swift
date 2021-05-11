@@ -92,7 +92,7 @@ c = nil
 
 print(c!)*/
 
-class Name {
+/*class Name {
     var name = "Song"
     
     func my_name() {
@@ -106,15 +106,28 @@ class YourName : Name {
     func ourName() {
         print("my name is \(name) and your name is \(yourName)")
     }
+}*/
+
+class Name {
+    var name : String
+    var age : Int
+    
+    init(name:String, age:Int) {
+        self.name = name
+        self.age = age
+    }
+    
+    func my_name() {
+        print("my name is \(name)")
+    }
 }
 
-let song : YourName = YourName()
+let song : Name = Name(name: "song", age: 24)
 
 print(song.name)
-print(song.yourName)
+print(song.age)
 
 song.my_name()
-song.ourName()
 
 
 
