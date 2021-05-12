@@ -108,7 +108,7 @@ class YourName : Name {
     }
 }*/
 
-class Name {
+/*class Name {
     var name : String
     var age : Int
     
@@ -118,15 +118,27 @@ class Name {
     }
     
     func my_name() {
+        print("my name is \(name) and \(age) year's old")
+    }
+}
+
+let name1 : Name = Name(name: "song", age: 24)
+let name2 : Name = Name(name: "kim", age: 25)
+
+name1.my_name()
+name2.my_name()*/
+
+struct Name {
+    var name: String
+    
+    func my_name() {
         print("my name is \(name)")
     }
 }
 
-let song : Name = Name(name: "song", age: 24)
+var song : Name = Name(name: "song")
 
 print(song.name)
-print(song.age)
-
 song.my_name()
 
 
