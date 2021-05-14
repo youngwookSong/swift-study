@@ -129,10 +129,16 @@ name1.my_name()
 name2.my_name()*/
 
 struct Name {
-    var name: String
+    var name: String = "kim"
+    var age: Int
     
     func my_name() {
-        print("my name is \(name)")
+        print("my name is \(name) and \(age) year's old")
+    }
+    
+    init(name: String) {
+        self.name = name
+        self.age = 24
     }
 }
 
