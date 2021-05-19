@@ -22,6 +22,7 @@
 		B97F93F72654E80C000D217A /* third.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97F93F62654E80C000D217A /* third.swift */; };
 		B97F93FA2654E9C8000D217A /* pgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97F93F92654E9C8000D217A /* pgViewController.swift */; };
 		B9AD377B2654F1FE00622C0B /* cateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AD377A2654F1FE00622C0B /* cateViewController.swift */; };
+		B9AD377E2654F59400622C0B /* kakao.png in Resources */ = {isa = PBXBuildFile; fileRef = B9AD377D2654F59400622C0B /* kakao.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		B97F93F62654E80C000D217A /* third.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = third.swift; sourceTree = "<group>"; };
 		B97F93F92654E9C8000D217A /* pgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pgViewController.swift; sourceTree = "<group>"; };
 		B9AD377A2654F1FE00622C0B /* cateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cateViewController.swift; sourceTree = "<group>"; };
+		B9AD377D2654F59400622C0B /* kakao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kakao.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				B97F93E42654E307000D217A /* IMG_0776.JPG */,
 				B97F93E72654E30C000D217A /* IMG_2925.JPG */,
 				B97F93EA2654E310000D217A /* IMG_2468.JPG */,
+				B9AD377D2654F59400622C0B /* kakao.png */,
 				B97F93CE2654DD01000D217A /* AppDelegate.swift */,
 				B97F93D02654DD01000D217A /* SceneDelegate.swift */,
 				B97F93D22654DD01000D217A /* ViewController.swift */,
@@ -157,6 +160,7 @@
 				B97F93D62654DD01000D217A /* Main.storyboard in Resources */,
 				B97F93E52654E307000D217A /* IMG_0776.JPG in Resources */,
 				B97F93EB2654E310000D217A /* IMG_2468.JPG in Resources */,
+				B9AD377E2654F59400622C0B /* kakao.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

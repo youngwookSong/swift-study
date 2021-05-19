@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         imageView.image = UIImage(named: images[pageCon.currentPage])
     }
     @IBAction func pageCon2Action(_ sender: UIPageControl) {
-        imageView2.image = UIImage(named: images[pageCon.currentPage])
+        imageView2.image = UIImage(named: images[pageCon2.currentPage])
     }
     
     

@@ -8,20 +8,21 @@
 import UIKit
 
 class cateViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    let cate = ["금융", "헬스","비즈니스", "SNS", "게임", "사진 및 비디오", "생산성", "라이프 스타일", "날씨"]
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return cate.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = nan[indexPath.row]
+        cell.textLabel?.text = cate[indexPath.row]
         return cell
     }
     
 
     @IBOutlet weak var tableview: UITableView!
-    var nan = ["상","중","하"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
