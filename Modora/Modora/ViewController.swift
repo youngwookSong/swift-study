@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var imageView2: UIImageView!
     @IBOutlet weak var pageCon2: UIPageControl!
+    @IBOutlet weak var imageView3: UIImageView!
     
     @IBAction func pageConAction(_ sender: UIPageControl) {
         imageView.image = UIImage(named: images[pageCon.currentPage])
@@ -37,6 +38,7 @@ class ViewController: UIViewController {
         
         imageView.image = UIImage(named: images[0])
         imageView2.image = UIImage(named: images[0])
+        imageView3.image = UIImage(named: images[0])
         
     }
 

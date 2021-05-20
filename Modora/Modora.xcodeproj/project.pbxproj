@@ -23,6 +23,11 @@
 		B97F93FA2654E9C8000D217A /* pgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97F93F92654E9C8000D217A /* pgViewController.swift */; };
 		B9AD377B2654F1FE00622C0B /* cateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AD377A2654F1FE00622C0B /* cateViewController.swift */; };
 		B9AD377E2654F59400622C0B /* kakao.png in Resources */ = {isa = PBXBuildFile; fileRef = B9AD377D2654F59400622C0B /* kakao.png */; };
+		B9DDE7B82655FE02006328A5 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DDE7B72655FE02006328A5 /* CollectionViewController.swift */; };
+		B9DDE7BC26560021006328A5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DDE7BB26560021006328A5 /* CollectionViewCell.swift */; };
+		B9DDE7C4265616F4006328A5 /* insta.png in Resources */ = {isa = PBXBuildFile; fileRef = B9DDE7C3265616F4006328A5 /* insta.png */; };
+		B9DDE7C7265616F8006328A5 /* face.png in Resources */ = {isa = PBXBuildFile; fileRef = B9DDE7C6265616F8006328A5 /* face.png */; };
+		B9DDE7CA26561974006328A5 /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = B9DDE7C926561974006328A5 /* empty.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +49,11 @@
 		B97F93F92654E9C8000D217A /* pgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pgViewController.swift; sourceTree = "<group>"; };
 		B9AD377A2654F1FE00622C0B /* cateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cateViewController.swift; sourceTree = "<group>"; };
 		B9AD377D2654F59400622C0B /* kakao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kakao.png; sourceTree = "<group>"; };
+		B9DDE7B72655FE02006328A5 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		B9DDE7BB26560021006328A5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		B9DDE7C3265616F4006328A5 /* insta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = insta.png; sourceTree = "<group>"; };
+		B9DDE7C6265616F8006328A5 /* face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face.png; sourceTree = "<group>"; };
+		B9DDE7C926561974006328A5 /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +70,6 @@
 		B97F93C22654DD01000D217A = {
 			isa = PBXGroup;
 			children = (
-				B9AD377A2654F1FE00622C0B /* cateViewController.swift */,
 				B97F93CD2654DD01000D217A /* Modora */,
 				B97F93CC2654DD01000D217A /* Products */,
 			);
@@ -77,14 +86,20 @@
 		B97F93CD2654DD01000D217A /* Modora */ = {
 			isa = PBXGroup;
 			children = (
+				B9DDE7B72655FE02006328A5 /* CollectionViewController.swift */,
+				B9AD377A2654F1FE00622C0B /* cateViewController.swift */,
 				B97F93E42654E307000D217A /* IMG_0776.JPG */,
 				B97F93E72654E30C000D217A /* IMG_2925.JPG */,
 				B97F93EA2654E310000D217A /* IMG_2468.JPG */,
 				B9AD377D2654F59400622C0B /* kakao.png */,
+				B9DDE7C3265616F4006328A5 /* insta.png */,
+				B9DDE7C6265616F8006328A5 /* face.png */,
+				B9DDE7C926561974006328A5 /* empty.png */,
 				B97F93CE2654DD01000D217A /* AppDelegate.swift */,
 				B97F93D02654DD01000D217A /* SceneDelegate.swift */,
 				B97F93D22654DD01000D217A /* ViewController.swift */,
 				B97F93D42654DD01000D217A /* Main.storyboard */,
+				B9DDE7BB26560021006328A5 /* CollectionViewCell.swift */,
 				B97F93F92654E9C8000D217A /* pgViewController.swift */,
 				B97F93F02654E7FC000D217A /* first.swift */,
 				B97F93F32654E806000D217A /* second.swift */,
@@ -156,9 +171,12 @@
 			files = (
 				B97F93DB2654DD03000D217A /* LaunchScreen.storyboard in Resources */,
 				B97F93D82654DD03000D217A /* Assets.xcassets in Resources */,
+				B9DDE7C7265616F8006328A5 /* face.png in Resources */,
 				B97F93E82654E30C000D217A /* IMG_2925.JPG in Resources */,
+				B9DDE7C4265616F4006328A5 /* insta.png in Resources */,
 				B97F93D62654DD01000D217A /* Main.storyboard in Resources */,
 				B97F93E52654E307000D217A /* IMG_0776.JPG in Resources */,
+				B9DDE7CA26561974006328A5 /* empty.png in Resources */,
 				B97F93EB2654E310000D217A /* IMG_2468.JPG in Resources */,
 				B9AD377E2654F59400622C0B /* kakao.png in Resources */,
 			);
@@ -175,11 +193,13 @@
 				B97F93D32654DD01000D217A /* ViewController.swift in Sources */,
 				B97F93CF2654DD01000D217A /* AppDelegate.swift in Sources */,
 				B97F93D12654DD01000D217A /* SceneDelegate.swift in Sources */,
+				B9DDE7B82655FE02006328A5 /* CollectionViewController.swift in Sources */,
 				B97F93EE2654E7AA000D217A /* pageViewController.swift in Sources */,
 				B97F93F12654E7FC000D217A /* first.swift in Sources */,
 				B97F93F42654E806000D217A /* second.swift in Sources */,
 				B97F93F72654E80C000D217A /* third.swift in Sources */,
 				B97F93FA2654E9C8000D217A /* pgViewController.swift in Sources */,
+				B9DDE7BC26560021006328A5 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
