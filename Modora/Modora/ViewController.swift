@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UIGestureRecognizerDelegate {
+class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     var images = ["kakao","insta","face"]
     var images_rec = ["insta","face","kakao"]
@@ -17,6 +17,7 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
     
     @IBOutlet weak var imageView2: UIImageView!
     @IBOutlet weak var pageCon2: UIPageControl!
+    
     @IBOutlet weak var imageView3: UIImageView!
     
     @IBOutlet weak var subimgview1: UIImageView!
@@ -76,10 +77,10 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
         subimgview2.image = UIImage(named: images[1])
         subimgview2_2.image = UIImage(named: images_rec[1])
         
-        let tapGesture = UITapGestureRecognizer(target: self, action:  #selector(touchToPickPhoto))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(touchToPickPhoto))
         tapGesture.delegate = self
-        self.imageView.addGestureRecognizer(tapGesture)
-          //imageView.isUserInteractionEnabled
+        imageView.addGestureRecognizer(tapGesture)
+        imageView.isUserInteractionEnabled = true //요게 있어야되네!
         
     }
     
