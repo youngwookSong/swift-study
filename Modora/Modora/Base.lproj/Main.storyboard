@@ -156,11 +156,11 @@
             <objects>
                 <viewController storyboardIdentifier="pgViewController" id="SbM-uj-X9D" customClass="pgViewController" customModule="Modora" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wRD-AQ-R3p">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2IL-SV-yVo">
-                                <rect key="frame" x="0.0" y="33" width="375" height="614"/>
+                                <rect key="frame" x="0.0" y="53" width="375" height="614"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="13r-FY-AbQ" kind="embed" identifier="PageViewController" id="vN6-21-n0d"/>
@@ -345,16 +345,6 @@
                     <view key="view" contentMode="scaleToFill" id="4Jm-LS-7iO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIp-aB-vGC">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="SbM-uj-X9D" kind="show" id="cuo-4b-Sn1"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ft3-Iq-kI3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>

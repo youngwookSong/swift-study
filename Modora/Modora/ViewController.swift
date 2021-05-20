@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIGestureRecognizerDelegate {
+class ViewController: UIViewController {
     
     var images = ["kakao","insta","face"]
     var images_rec = ["insta","face","kakao"]
@@ -28,6 +28,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBAction func pageConAction(_ sender: UIPageControl) {
         imageView.image = UIImage(named: images[pageCon.currentPage])
+        
+        //양옆 사진들 보여주는거
         if (pageCon.currentPage == 0) {
             subimgview1.image = UIImage(named: "")
             subimgview2.image = UIImage(named: images[pageCon.currentPage + 1])
@@ -77,15 +79,19 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         subimgview2.image = UIImage(named: images[1])
         subimgview2_2.image = UIImage(named: images_rec[1])
         
+        //tapGesture는 맨위 이미지 뷰에만 넣음
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(touchToPickPhoto))
-        tapGesture.delegate = self
         imageView.addGestureRecognizer(tapGesture)
         imageView.isUserInteractionEnabled = true //요게 있어야되네!
         
     }
     
     @objc func touchToPickPhoto() {
-      print("touch")
+        print("touch")
+        //모달로 화면 바꾸기 (코드) -> 스토리보드 아이디가 있어야하
+        let vcName = self.storyboard?.instantiateViewController(withIdentifier: "pgViewController")
+        vcName?.modalTransitionStyle = .coverVertical
+        self.present(vcName!, animated: true, completion: nil)
     }
 
 
