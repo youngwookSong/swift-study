@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B92B4FA62656760500E728FA /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92B4FA52656760500E728FA /* detailViewController.swift */; };
 		B97F93CF2654DD01000D217A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97F93CE2654DD01000D217A /* AppDelegate.swift */; };
 		B97F93D12654DD01000D217A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97F93D02654DD01000D217A /* SceneDelegate.swift */; };
 		B97F93D32654DD01000D217A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97F93D22654DD01000D217A /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B92B4FA52656760500E728FA /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 		B97F93CB2654DD01000D217A /* Modora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97F93CE2654DD01000D217A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B97F93D02654DD01000D217A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		B97F93CD2654DD01000D217A /* Modora */ = {
 			isa = PBXGroup;
 			children = (
+				B92B4FA52656760500E728FA /* detailViewController.swift */,
 				B9DDE7B72655FE02006328A5 /* CollectionViewController.swift */,
 				B9AD377A2654F1FE00622C0B /* cateViewController.swift */,
 				B97F93E42654E307000D217A /* IMG_0776.JPG */,
@@ -200,6 +203,7 @@
 				B97F93F72654E80C000D217A /* third.swift in Sources */,
 				B97F93FA2654E9C8000D217A /* pgViewController.swift in Sources */,
 				B9DDE7BC26560021006328A5 /* CollectionViewCell.swift in Sources */,
+				B92B4FA62656760500E728FA /* detailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

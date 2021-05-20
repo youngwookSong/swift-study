@@ -84,6 +84,19 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         let size = CGSize(width: width, height: width)
         return size
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detail"
+        {
+            if let destination = segue.destination as? detailViewController
+            {
+                if let idx = self.collectionView.indexPathsForSelectedItems?.first
+                {
+                    destination.index = idx
+                }
+            }
+        }
+    }
 
     // MARK: UICollectionViewDelegate
 
