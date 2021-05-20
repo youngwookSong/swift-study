@@ -40,8 +40,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         return 1
     }
     
-    let image = [UIImage(named: "kakao"),UIImage(named: "insta"),UIImage(named: "face"),UIImage(named: "empty"),UIImage(named: "empty"),UIImage(named: "empty")]
-    let label = ["카카오톡", "인스타그램", "페이스북", "empty","empty","empty"]
+    let image = [UIImage(named: "kakao"),UIImage(named: "insta"),UIImage(named: "face"),UIImage(named: "empty"),UIImage(named: "empty"),UIImage(named: "empty"),UIImage(named: "empty"),UIImage(named: "empty"),UIImage(named: "empty")]
+    let label = ["카카오톡", "인스타그램", "페이스북", "empty","empty","empty","empty","empty","empty"]
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
