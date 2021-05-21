@@ -14,7 +14,7 @@ class third: UIViewController, UITableViewDataSource, UITableViewDelegate  {
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var btn: UIButton!
     
-    let course = ["카카오톡 시작하기", "메세지 보내기", "QR켜기", "사진 보내기", "그룹채팅 만들기"]
+    let course = ["페이스북 시작하기", "게시물 등록하기", "댓글 작성하기", "게시물 공유하기", "메신저 사용하기"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return course.count
@@ -29,7 +29,7 @@ class third: UIViewController, UITableViewDataSource, UITableViewDelegate  {
     
     override func viewDidLoad() {
         
-        img.image = UIImage(named: "kakao")
+        img.image = UIImage(named: "face")
         tableview.delegate = self
         tableview.dataSource = self
         
