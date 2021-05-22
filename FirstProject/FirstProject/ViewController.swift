@@ -11,6 +11,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var myLabel: UILabel!
     
+    
+    @IBAction func myButtonAction(_ sender: UIButton) {
+        myLabel.text = "Hi Kim!"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
