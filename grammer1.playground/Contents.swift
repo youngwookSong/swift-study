@@ -128,7 +128,7 @@ let name2 : Name = Name(name: "kim", age: 25)
 name1.my_name()
 name2.my_name()*/
 
-struct Name {
+/*struct Name {
     var name: String = "kim"
     var age: Int
     
@@ -145,7 +145,30 @@ struct Name {
 var song : Name = Name(name: "song")
 
 print(song.name)
-song.my_name()
+song.my_name()*/
+
+
+class Person {
+    let name: String
+    
+    init(name: String) {
+        self.name = name
+        print("\(name)이 초기화됨")
+    }
+    deinit {
+        print("\(name)이 해제됨")
+    }
+}
+
+var reference1: Person? = Person(name: "Song")
+
+var reference2: Person? = reference1
+var reference3: Person? = reference1
+
+reference1 = nil
+reference2 = nil
+
+reference3 = nil
 
 
 
