@@ -148,7 +148,7 @@ print(song.name)
 song.my_name()*/
 
 
-class Person {
+/*class Person {
     let name: String
     
     init(name: String) {
@@ -168,7 +168,7 @@ var reference3: Person? = reference1
 reference1 = nil
 reference2 = nil
 
-reference3 = nil
+reference3 = nil*/
 
 
 
