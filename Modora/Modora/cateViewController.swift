@@ -9,7 +9,7 @@ import UIKit
 
 class cateViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let cate = ["금융", "헬스","비즈니스", "SNS", "게임", "사진 및 비디오", "생산성", "라이프 스타일", "날씨"]
+    let cate = ["금융", "SNS", "헬스","비즈니스", "게임", "사진 및 비디오", "생산성", "라이프 스타일", "날씨"]
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cate.count
     }
@@ -18,6 +18,7 @@ class cateViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         cell.textLabel?.text = cate[indexPath.row]
+        //cell.imageView = UIImageView(named: "doc.text.below.ecg.fill.rtl")
         return cell
     }
     
