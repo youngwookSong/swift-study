@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var images = ["kakao","insta","face"]
-    var images_rec = ["인기1","인기2","인기3"]
+    var images_rec = ["인기1","인기2","인기3.jpg"]
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var pageCon: UIPageControl!
