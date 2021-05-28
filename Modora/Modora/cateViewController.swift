@@ -18,7 +18,7 @@ class cateViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         cell.textLabel?.text = cate[indexPath.row]
-        //cell.imageView = UIImageView(named: "doc.text.below.ecg.fill.rtl")
+        cell.imageView?.image = UIImage(named: "UIBarButtonSystemItemTrash")
         return cell
     }
     
@@ -32,6 +32,19 @@ class cateViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableview.dataSource = self
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "cateSegue"
+        {
+            if let destination = segue.destination as? CollectionViewController
+            {
+                if let selectdeIndex = self.tableview.indexPathForSelectedRow?.row
+                {
+                    destination.index = selectdeIndex
+                }
+            }
+        }
     }
     
 

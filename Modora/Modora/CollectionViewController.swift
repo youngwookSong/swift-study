@@ -10,10 +10,32 @@ import UIKit
 private let reuseIdentifier = "ccell"
 
 class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-
+    
+    var index : Int?
+    var main_img : [UIImage?] = []
+    var main_label : [String] = []
+    
+    let image_bank = [UIImage(named: "금융1"),UIImage(named: "금융2"),UIImage(named: "금융3"),UIImage(named: "금융4"),UIImage(named: "금융5"),UIImage(named: "금융6"),UIImage(named: "금융7"),UIImage(named: "금융8"),UIImage(named: "금융9")]
+    
+    let image_sns = [UIImage(named: "kakao"),UIImage(named: "insta"),UIImage(named: "face"),UIImage(named: "sns1"),UIImage(named: "sns2.jpg"),UIImage(named: "sns3"),UIImage(named: "sns4"),UIImage(named: "sns5"),UIImage(named: "sns6.jpg")]
+    
+    let label_sns = ["카카오톡", "인스타그램", "페이스북", "트위터","스냅챗","네이버밴드","핀터레스트","클럽하우스","틱톡"]
+    
+    let label_bank = ["KB국민은행", "하나 1QBank", "토스", "카카오페이","Sol 신한은행","우리은행 WON","농협 NHBank","기업 i-ONE Bank","CitiBank"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(index!)
+        
+        if (index! == 0) {
+            main_img = image_bank
+            main_label = label_bank
+        }
+        
+        if (index! == 1) {
+            main_img = image_sns
+            main_label = label_sns
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -39,21 +61,17 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-    
-    let image = [UIImage(named: "kakao"),UIImage(named: "insta"),UIImage(named: "face"),UIImage(named: "empty"),UIImage(named: "empty"),UIImage(named: "empty"),UIImage(named: "empty"),UIImage(named: "empty"),UIImage(named: "empty")]
-    let label = ["카카오톡", "인스타그램", "페이스북", "empty","empty","empty","empty","empty","empty"]
-
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return image.count
+        return main_img.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CollectionViewCell
         
-        cell.imageview.image = image[indexPath.row]
-        cell.label.text = label[indexPath.row]
+        cell.imageview.image = main_img[indexPath.row]
+        cell.label.text = main_label[indexPath.row]
     
         // Configure the cell
     

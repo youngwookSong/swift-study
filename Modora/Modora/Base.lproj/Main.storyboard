@@ -318,18 +318,18 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JQV-md-nqz">
                                                     <rect key="frame" x="55" y="0.0" width="285" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="square.and.arrow.up.on.square" catalog="system" id="QXH-iP-X7a">
-                                                    <rect key="frame" x="16.5" y="9" width="23" height="25"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="pencil" catalog="system" id="QXH-iP-X7a">
+                                                    <rect key="frame" x="19.25" y="14" width="17.5" height="15.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="NGE-96-0du" kind="show" id="uUS-9V-cZ7"/>
+                                            <segue destination="NGE-96-0du" kind="show" identifier="cateSegue" id="uUS-9V-cZ7"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -673,7 +673,6 @@
         <image name="mail.fill" catalog="system" width="128" height="93"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="simcard.2.fill" catalog="system" width="128" height="121"/>
-        <image name="square.and.arrow.up.on.square" catalog="system" width="117" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

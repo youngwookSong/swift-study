@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var images = ["kakao","insta","face"]
-    var images_rec = ["insta","face","kakao"]
+    var images_rec = ["인기1","인기2","인기3"]
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var pageCon: UIPageControl!
@@ -74,7 +74,7 @@ class ViewController: UIViewController {
     
         imageView.image = UIImage(named: images[0])
         imageView2.image = UIImage(named: images_rec[0])
-        imageView3.image = UIImage(named: images[0])
+        imageView3.image = UIImage(named: "금융4")
         
         subimgview2.image = UIImage(named: images[1])
         subimgview2_2.image = UIImage(named: images_rec[1])
