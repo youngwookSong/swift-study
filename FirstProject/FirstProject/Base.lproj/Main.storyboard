@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Npy-ws-YSb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -29,6 +29,7 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="myButtonAction:" destination="Npy-ws-YSb" eventType="touchUpInside" id="pzS-D2-KZz"/>
+                                    <segue destination="lRZ-Ov-x4e" kind="show" id="1rR-4m-rmg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -49,11 +50,12 @@
             <objects>
                 <viewController id="lRZ-Ov-x4e" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pFN-SX-1gW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="qbI-No-wDR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="XSN-ra-JXh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hqn-nd-Ypl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
