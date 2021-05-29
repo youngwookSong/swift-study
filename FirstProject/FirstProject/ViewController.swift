@@ -13,14 +13,12 @@ class ViewController: UIViewController {
     
     
     @IBAction func myButtonAction(_ sender: UIButton) {
-        myLabel.text = "Hi Kim!"
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        myLabel.text = "Hi Song!"
         print("메모리에 View가 Load됨 (viewDidLoad)")
     }
     
