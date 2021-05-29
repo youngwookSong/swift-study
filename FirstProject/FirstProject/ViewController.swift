@@ -13,7 +13,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func myButtonAction(_ sender: UIButton) {
-        myLabel.text = "HI Kim!"
+        if let secondView = self.storyboard?.instantiateViewController(identifier: "secondView") as? secondViewController {
+            present(secondView, animated: true, completion: nil)
+        }
     }
     
     

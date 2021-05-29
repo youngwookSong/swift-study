@@ -29,7 +29,6 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="myButtonAction:" destination="Npy-ws-YSb" eventType="touchUpInside" id="pzS-D2-KZz"/>
-                                    <segue destination="lRZ-Ov-x4e" kind="show" id="1rR-4m-rmg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -45,12 +44,12 @@
             </objects>
             <point key="canvasLocation" x="2530.434782608696" y="-542.41071428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="M6v-SL-cMm">
             <objects>
-                <viewController id="lRZ-Ov-x4e" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secondView" id="lRZ-Ov-x4e" customClass="secondViewController" customModule="FirstProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pFN-SX-1gW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="qbI-No-wDR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

@@ -47,6 +47,7 @@ class cateViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 }
             }
         }
+        
     }
     
 
