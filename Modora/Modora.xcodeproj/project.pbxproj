@@ -19,7 +19,6 @@
 		B9317EB7266120EF007A898E /* sns6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9317EB1266120EF007A898E /* sns6.jpg */; };
 		B9317EC426612264007A898E /* 금융2.png in Resources */ = {isa = PBXBuildFile; fileRef = B9317EBB26612263007A898E /* 금융2.png */; };
 		B9317EC526612264007A898E /* 금융3.png in Resources */ = {isa = PBXBuildFile; fileRef = B9317EBC26612263007A898E /* 금융3.png */; };
-		B9317EC626612264007A898E /* 금융4.png in Resources */ = {isa = PBXBuildFile; fileRef = B9317EBD26612263007A898E /* 금융4.png */; };
 		B9317EC726612264007A898E /* 금융6.png in Resources */ = {isa = PBXBuildFile; fileRef = B9317EBE26612263007A898E /* 금융6.png */; };
 		B9317EC826612264007A898E /* 금융7.png in Resources */ = {isa = PBXBuildFile; fileRef = B9317EBF26612263007A898E /* 금융7.png */; };
 		B9317EC926612264007A898E /* 금융1.png in Resources */ = {isa = PBXBuildFile; fileRef = B9317EC026612263007A898E /* 금융1.png */; };
@@ -70,7 +69,6 @@
 		B9317EB1266120EF007A898E /* sns6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sns6.jpg; sourceTree = "<group>"; };
 		B9317EBB26612263007A898E /* 금융2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "금융2.png"; sourceTree = "<group>"; };
 		B9317EBC26612263007A898E /* 금융3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "금융3.png"; sourceTree = "<group>"; };
-		B9317EBD26612263007A898E /* 금융4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "금융4.png"; path = "../../../../../Downloads/아이콘/금융4.png"; sourceTree = "<group>"; };
 		B9317EBE26612263007A898E /* 금융6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "금융6.png"; sourceTree = "<group>"; };
 		B9317EBF26612263007A898E /* 금융7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "금융7.png"; sourceTree = "<group>"; };
 		B9317EC026612263007A898E /* 금융1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "금융1.png"; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 				B9317EC026612263007A898E /* 금융1.png */,
 				B9317EBB26612263007A898E /* 금융2.png */,
 				B9317EBC26612263007A898E /* 금융3.png */,
-				B9317EBD26612263007A898E /* 금융4.png */,
 				B9317EC326612264007A898E /* 금융5.png */,
 				B9317EBE26612263007A898E /* 금융6.png */,
 				B9317EBF26612263007A898E /* 금융7.png */,
@@ -272,7 +269,6 @@
 				B9317EB6266120EF007A898E /* sns5.png in Resources */,
 				B9317EDE266127BD007A898E /* 9_날씨.png in Resources */,
 				B97F93DB2654DD03000D217A /* LaunchScreen.storyboard in Resources */,
-				B9317EC626612264007A898E /* 금융4.png in Resources */,
 				B9317EA426611F7B007A898E /* sns4.png in Resources */,
 				B97F93D82654DD03000D217A /* Assets.xcassets in Resources */,
 				B9317ED9266127BD007A898E /* 4_헬스.png in Resources */,
