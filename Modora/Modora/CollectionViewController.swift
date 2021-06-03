@@ -15,7 +15,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     var main_img : [UIImage?] = []
     var main_label : [String] = []
     
-    let image_bank = [UIImage(named: "금융1"),UIImage(named: "금융2"),UIImage(named: "금융3"),UIImage(named: "금융4"),UIImage(named: "금융5"),UIImage(named: "금융6"),UIImage(named: "금융7"),UIImage(named: "금융8"),UIImage(named: "금융9")]
+    let image_bank = [UIImage(named: "금융1"),UIImage(named: "금융2"),UIImage(named: "금융3"),UIImage(named: "금융3"),UIImage(named: "금융5"),UIImage(named: "금융6"),UIImage(named: "금융7"),UIImage(named: "금융8"),UIImage(named: "금융9")]
     
     let image_sns = [UIImage(named: "kakao"),UIImage(named: "insta"),UIImage(named: "face"),UIImage(named: "sns1"),UIImage(named: "sns2.jpg"),UIImage(named: "sns3"),UIImage(named: "sns4"),UIImage(named: "sns5"),UIImage(named: "sns6.jpg")]
     
