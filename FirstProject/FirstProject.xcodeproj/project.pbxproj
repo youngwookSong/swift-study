@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B915FD382668C72F0075CC4D /* sliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915FD372668C72F0075CC4D /* sliderViewController.swift */; };
 		B97E745B263487D90063C3DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E745A263487D90063C3DE /* AppDelegate.swift */; };
 		B97E745D263487D90063C3DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E745C263487D90063C3DE /* SceneDelegate.swift */; };
 		B97E745F263487D90063C3DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E745E263487D90063C3DE /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B915FD372668C72F0075CC4D /* sliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sliderViewController.swift; sourceTree = "<group>"; };
 		B97E7457263487D90063C3DE /* FirstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97E745A263487D90063C3DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B97E745C263487D90063C3DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				B97E745C263487D90063C3DE /* SceneDelegate.swift */,
 				B97E745E263487D90063C3DE /* ViewController.swift */,
 				B97E7460263487D90063C3DE /* Main.storyboard */,
+				B915FD372668C72F0075CC4D /* sliderViewController.swift */,
 				B9E631A9266205EE00666052 /* secondViewController.swift */,
 				B97E7463263487DA0063C3DE /* Assets.xcassets */,
 				B97E7465263487DA0063C3DE /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			files = (
 				B9E631AA266205EE00666052 /* secondViewController.swift in Sources */,
 				B97E745F263487D90063C3DE /* ViewController.swift in Sources */,
+				B915FD382668C72F0075CC4D /* sliderViewController.swift in Sources */,
 				B97E745B263487D90063C3DE /* AppDelegate.swift in Sources */,
 				B97E745D263487D90063C3DE /* SceneDelegate.swift in Sources */,
 			);
