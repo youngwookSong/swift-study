@@ -11,7 +11,7 @@ if let yy = y {
     print("y = \(yy)")
 }*/
 
-let x : Int? = 10
+/*let x : Int? = 10
 let y : Int? = nil
 
 func opbinding() {
@@ -27,7 +27,35 @@ func opbinding() {
     print(yy)
 }
 
-opbinding()
+opbinding()*/
+
+struct Contacts {
+    var email : String
+    var address : [String : String]
+}
+
+struct Person {
+    var name : String
+    var contacts : Contacts?
+    
+    init(name : String, email : String, address : String) {
+        self.name = name
+        contacts = Contacts(email: email, address: ["home" : address])
+    }
+}
+
+var my : Person? = Person(name: "Song", email: "wook4506@naver.com", address: "ilsan")
+
+//my = nil
+
+if let my_email = my?.contacts?.email {
+    print("I have a email : \(my_email)")
+}
+else {
+    print("nono..")
+}
+
+
 
 
 /*let name1 : String?
@@ -47,6 +75,7 @@ if let nameFirst = name1,
 
 
 
+//암묵적 언래핑
 /*let x : Int? = 1
 let y : Int = x!
 let z = x
