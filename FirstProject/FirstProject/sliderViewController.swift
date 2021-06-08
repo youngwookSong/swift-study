@@ -10,7 +10,6 @@ import UIKit
 class sliderViewController: UIViewController {
 
     @IBOutlet weak var valueLabel: UILabel!
-    
     @IBOutlet weak var slider: UISlider!
     
     @IBAction func sliderValueChanged(_ sender: UISlider) {
