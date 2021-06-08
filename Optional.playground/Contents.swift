@@ -1,5 +1,6 @@
 import UIKit
 
+//옵셔널 바인딩
 /*let x : Int? = 10
 let y : Int? = nil
 
@@ -29,7 +30,8 @@ func opbinding() {
 
 opbinding()*/
 
-struct Contacts {
+//옵셔널 체이닝
+/*struct Contacts {
     var email : String
     var address : [String : String]
 }
@@ -53,7 +55,7 @@ if let my_email = my?.contacts?.email {
 }
 else {
     print("nono..")
-}
+}*/
 
 
 
@@ -71,15 +73,15 @@ if let nameFirst = name1,
 
 
 //암묵적 언래핑
-let x : Int? = 1
+/*let x : Int? = 1
 let y : Int = x!
 let z = x
 print(x,y,z)
 print(type(of: x))
 print(type(of: y))
-print(type(of: z))
+print(type(of: z))*/
 
-let a : Int! = 1
+/*let a : Int! = 1
 let b : Int = a  //이게 되고 1나옴 a!안해도됨
 let c : Int = a!
 let d = a        //이거는 옵셔널
@@ -90,4 +92,18 @@ print(type(of: a))
 print(type(of: b))
 print(type(of: c))
 print(type(of: d))
-print(type(of: e))
+print(type(of: e))*/
+
+var a : Int? = 1 //암시적으로 벗겨진 옵셔널
+
+a = 8
+
+print(a)
+
+var b : Int! = 1 //암시적으로 벗겨진 옵셔널
+
+b = nil
+
+print(b)
+print(b!)
+
