@@ -70,13 +70,8 @@ if let nameFirst = name1,
 }*/
 
 
-
-
-
-
-
 //암묵적 언래핑
-/*let x : Int? = 1
+let x : Int? = 1
 let y : Int = x!
 let z = x
 print(x,y,z)
@@ -95,4 +90,4 @@ print(type(of: a))
 print(type(of: b))
 print(type(of: c))
 print(type(of: d))
-print(type(of: e))*/
+print(type(of: e))
