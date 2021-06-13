@@ -92,7 +92,7 @@ print(type(of: a))
 print(type(of: b))
 print(type(of: c))
 print(type(of: d))
-print(type(of: e))*/
+print(type(of: e))
 
 var a : Int? = 1 //암시적으로 벗겨진 옵셔널
 
@@ -105,5 +105,20 @@ var b : Int! = 1 //암시적으로 벗겨진 옵셔널
 b = nil
 
 print(b)
-print(b!)
+print(b!)*/
+
+let a : Int? = 10
+var b : Int
+
+if let a = a {
+    b = a
+    print(b)
+}
+
+let c : Int? = 10
+var d : Int
+
+d = c ?? 0
+
+print(d)
 
