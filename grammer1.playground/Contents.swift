@@ -148,6 +148,8 @@ print(song.name)
 song.my_name()*/
 
 
+
+//ARC 메모리 참조
 class Person {
     let name: String
     
