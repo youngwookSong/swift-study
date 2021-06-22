@@ -128,6 +128,7 @@ let name2 : Name = Name(name: "kim", age: 25)
 name1.my_name()
 name2.my_name()*/
 
+//구조체
 /*struct Name {
     var name: String = "kim"
     var age: Int
