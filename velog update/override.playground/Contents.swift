@@ -12,6 +12,7 @@ class ourName : Name {  //하위 클래스
     var yourName = "Kim"
     
     override func myName() {
+        super.myName()
         print("my name is \(name) and your name is \(yourName)")
     }
 }
