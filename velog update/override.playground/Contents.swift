@@ -20,3 +20,5 @@ class ourName : Name {  //하위 클래스
 let song : ourName = ourName()
 song.myName()
 
+//나중에 더 복잡한 오버라이드 공부해보기
+
