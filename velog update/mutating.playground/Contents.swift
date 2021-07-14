@@ -1,6 +1,7 @@
 import UIKit
 
 //나중에 꼭 다시 보기
+//구조체에서만 가능
 struct Person {
     let name: String
     var age: Int
