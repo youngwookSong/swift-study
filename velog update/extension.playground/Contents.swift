@@ -1,5 +1,6 @@
 import UIKit
 
+//extension 활용하기
 extension Double {
     var squared: Double {
         return self * self
