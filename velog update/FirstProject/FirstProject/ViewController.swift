@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
             super.viewDidLoad()
-            //navigation controller
+            //navigation controlle
             navigationController?.navigationBar.topItem?.title = "MainView"
             navigationController?.navigationBar.topItem?.prompt = "메인화면"
             navigationController?.navigationBar.topItem?.backButtonTitle = "뒤로가기"
