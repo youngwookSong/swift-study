@@ -14,6 +14,7 @@
 		B94C306826A167CF00370967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B94C306726A167CF00370967 /* Assets.xcassets */; };
 		B94C306B26A167CF00370967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94C306926A167CF00370967 /* LaunchScreen.storyboard */; };
 		B94C307526A16C1100370967 /* myTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C307426A16C1100370967 /* myTableViewController.swift */; };
+		B9B3CC7326A2FD7100C66162 /* myTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B3CC7226A2FD7100C66162 /* myTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B94C306A26A167CF00370967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B94C306C26A167CF00370967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B94C307426A16C1100370967 /* myTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTableViewController.swift; sourceTree = "<group>"; };
+		B9B3CC7226A2FD7100C66162 /* myTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				B94C306026A167CC00370967 /* SceneDelegate.swift */,
 				B94C306226A167CC00370967 /* ViewController.swift */,
 				B94C306426A167CC00370967 /* Main.storyboard */,
+				B9B3CC7226A2FD7100C66162 /* myTableViewCell.swift */,
 				B94C307426A16C1100370967 /* myTableViewController.swift */,
 				B94C306726A167CF00370967 /* Assets.xcassets */,
 				B94C306926A167CF00370967 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B94C306326A167CC00370967 /* ViewController.swift in Sources */,
+				B9B3CC7326A2FD7100C66162 /* myTableViewCell.swift in Sources */,
 				B94C305F26A167CC00370967 /* AppDelegate.swift in Sources */,
 				B94C306126A167CC00370967 /* SceneDelegate.swift in Sources */,
 				B94C307526A16C1100370967 /* myTableViewController.swift in Sources */,
