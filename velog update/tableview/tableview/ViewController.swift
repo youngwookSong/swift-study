@@ -36,6 +36,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "mySegue"{
+            if let destination = segue.destination as? nextViewController {
+                if let selectdeIndex = self.tableView.indexPathForSelectedRow?.row {
+                    destination.prepareImage = img[selectdeIndex]
+                    destination.prepareLabel = label[selectdeIndex]
+                }
+            }
+        }
+    }
 }
 
