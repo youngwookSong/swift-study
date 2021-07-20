@@ -4,7 +4,7 @@
 //
 //  Created by 송영욱 on 2021/07/16.
 //
-
+//나중에 static도 구현해보기
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
