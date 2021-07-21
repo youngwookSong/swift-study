@@ -13,14 +13,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let img = ["suit.diamond", "suit.heart", "suit.club", "suit.spade", "hexagon"]
     let label = ["1","2","3","4","5"]
     
+    //UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
+    //UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return label.count
     }
     
+    //UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! myTableViewCell
         
@@ -32,6 +35,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //위임자 지정
         tableView.delegate = self
         tableView.dataSource = self
     }
